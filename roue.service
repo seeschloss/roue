@@ -1,0 +1,9 @@
+[Unit]
+Description=Electricity meter readings
+
+[Service]
+ExecStart=/usr/bin/bash /home/seeschloss/bin/roue.sh
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
